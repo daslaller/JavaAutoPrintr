@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Main-Class: 
+Class-Path: CycleBackground.jar escpos_coffee.jar gson-2.8.6.jar javax.m
+ ail.jar jfoenix-8.0.10.jar JFXOptionPane1.8_jar.jar Resource1_8_jar.jar
+  SystemInformation1_8_jar.jar Utilities1_8_jar1.jar pdfbox-1.jar JFXOpt
+ ionPane1.8_jar.jar gson-2.8.6.jar print.jar JavaAutoPrintr.jar
+

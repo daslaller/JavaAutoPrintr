@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaAutoPrintr.jnlp">
+    <information>
+        <title>t</title>
+        <vendor>t</vendor>
+        <description>none</description>
+        <offline-allowed/>
+    </information>
+    <update check="background"/>
+    <resources>
+        <j2se version="11.0.12+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="CycleBackground.jar" size="6176" download="eager"/>
+        <jar href="JFXOptionPane1.8_jar.jar" size="9827" download="eager"/>
+        <jar href="JavaAutoPrintr.jar" size="19304" download="eager"/>
+        <jar href="Resource1_8_jar.jar" size="3942" download="eager"/>
+        <jar href="SystemInformation1_8_jar.jar" size="9946" download="eager"/>
+        <jar href="Utilities1_8_jar1.jar" size="440097" download="eager"/>
+        <jar href="escpos_coffee.jar" size="77395" download="eager"/>
+        <jar href="gson-2.8.6.jar" size="240255" download="eager"/>
+        <jar href="javax.mail.jar" size="659033" download="eager"/>
+        <jar href="jfoenix-9.0.10.jar" size="2432549" download="eager"/>
+        <jar href="pdfbox-1.jar" size="3346054" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="600" height="400" main-class="javaautoprintr.HelloApplication" name="HelloApplication"/>
+</jnlp>
+

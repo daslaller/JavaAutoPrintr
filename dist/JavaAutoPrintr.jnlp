@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaAutoPrintr.jnlp">
+    <information>
+        <title>JavaAutoPrintr</title>
+        <vendor>Lars</vendor>
+        <description>null</description>
+        <offline-allowed/>
+        <shortcut>
+            <desktop/>
+        </shortcut>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="11.0.12+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="JavaAutoPrintr.jar" size="19322" download="eager"/>
+        <jar href="lib/JFXOptionPane1.8_jar.jar" size="9827" download="eager"/>
+        <jar href="lib/Resource1_8_jar.jar" size="3942" download="eager"/>
+        <jar href="lib/SystemInformation.jar" size="10172" download="eager"/>
+        <jar href="lib/gson-2.8.6.jar" size="240255" download="eager"/>
+        <jar href="lib/jfoenix-9.0.10.jar" size="2432549" download="eager"/>
+        <jar href="lib/pdfbox-1.jar" size="3346054" download="eager"/>
+        <jar href="lib/print.jar" size="2785" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="javaautoprintr.HelloApplication" name="HelloApplication"/>
+</jnlp>
+
