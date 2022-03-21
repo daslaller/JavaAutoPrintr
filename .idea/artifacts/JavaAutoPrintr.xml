@@ -18,10 +18,6 @@
           <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
         </element>
       </element>
-      <element id="library" level="project" name="JavaAutoPrintr" />
-      <element id="library" level="project" name="jfoenix-9.0.10" />
-      <element id="library" level="project" name="lib" />
-      <element id="library" level="project" name="MegaPack 8" />
     </root>
   </artifact>
 </component>

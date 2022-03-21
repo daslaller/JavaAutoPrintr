@@ -1,6 +1,6 @@
 package javaautoprintr;
 
-import com.company.PrintPDF;
+
 import javafx.concurrent.Task;
 
 import javax.print.PrintException;

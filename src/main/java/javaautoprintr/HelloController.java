@@ -1,11 +1,11 @@
 package javaautoprintr;
 
 import com.company.JFXOptionPane;
-import com.company.PrintPDF;
 import com.company.SystemInfo;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXCheckBox;
 import com.jfoenix.controls.JFXToggleButton;
+import javaautoprintr.HelloApplication;
 import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
@@ -184,7 +184,8 @@ public class HelloController {
                 }
             }
         });
-        HelloApplication.settings.inputFolders.stream().map(Paths::get).map(Path::toFile).forEach(items::add);
+        items.addAll(HelloApplication.settings.inputFolders.stream().map(Paths::get).map(Path::toFile).collect(Collectors.toList()));
+
 
 
     }

@@ -1,12 +1,11 @@
 package javaautoprintr;
 
 import com.company.JFXOptionPane;
-import com.company.PrintPDF;
 import com.company.Resource;
 import com.company.SystemInfo;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.print.Printer;
+
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -57,19 +56,20 @@ public class HelloApplication extends Application {
             }
 
         }
+        //Load and set resources as UI
         System.out.println("Loading fxml!");
         URL helloViewFxml = Resource.findFile("hello-view.fxml").toUri().toURL();
         helloViewFxml = (helloViewFxml.toString() == null || helloViewFxml.toString().isEmpty()) ? HelloApplication.class.getResource("hello-view.fxml") : helloViewFxml;
         System.out.println("Found: " + helloViewFxml);
         FXMLLoader fxmlLoader = new FXMLLoader(helloViewFxml);
-       // HelloApplication.class.getResource("hello-view.fxml")
         Scene scene = new Scene(fxmlLoader.load(), -1, -1);
-//        scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
+
+        //Do on program close
         stage.setOnCloseRequest(windowEvent -> {
             if (settings != null) {
                 System.out.println("Trying to write: ");
                 System.out.println(settings);
-                String writeResult = GsonReader.toFile(settingsPath, GsonReader.tJson(settings)) ? "Successfully wrote settingsfile." : "Failed to write settingsfile";
+                String writeResult = GsonReader.toFile(settingsPath, GsonReader.tJson(settings)) ? "Successfully wrote settings-file." : "Failed to write settings-file";
                 System.out.println(writeResult);
                 if (!HelloController.printedItems.isEmpty()) {
                     HelloController.printedItems.stream().peek(file -> System.out.println("Deleting file that has been printed: " + file)).forEach(File::deleteOnExit);
